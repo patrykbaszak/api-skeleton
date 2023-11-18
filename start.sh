@@ -14,13 +14,11 @@ cp src/config/routes/nelmio_api_doc.yaml skeleton/config/routes/nelmio_api_doc.y
 cp src/config/packages/nelmio_api_doc.yaml skeleton/config/packages/nelmio_api_doc.yaml
 docker run --rm -v $(pwd):/app -w /app php:latest php scripts/AddNelmioApiDocBundle.php
 
-# rm -rf node_modules src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE .git vendor start.sh package.json package-lock.json
+rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE .git vendor start.sh package.json package-lock.json
 
-# mv skeleton/{,.[^.]}* ./
+mv skeleton/{,.[^.]}* ./
 
-# rm -rf skeleton
-
-cd skeleton
+rm -rf skeleton
 
 bash start.sh
-docker exec php composer update --no-interaction
+docker exec php composer update --no-interaction || composer update --no-interaction
