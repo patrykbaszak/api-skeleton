@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.4](https://github.com/patrykbaszak/api-skeleton/compare/1.1.3...1.1.4) (2023-11-18)
+
+
+### Bug Fixes
+
+* code fixed ([f4349c6](https://github.com/patrykbaszak/api-skeleton/commit/f4349c6bcd68fe23d4e6ae592cc8077a4212023c))
+
 ### [1.1.3](https://github.com/patrykbaszak/api-skeleton/compare/1.1.2...1.1.3) (2023-11-18)
 
 
