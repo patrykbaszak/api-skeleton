@@ -9,6 +9,7 @@ use Nelmio\ApiDocBundle\Annotation\Model;
 use OpenApi\Attributes as OA;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\HttpFoundation\Response;
 
 class StatusController extends AbstractController
 {
@@ -26,7 +27,7 @@ class StatusController extends AbstractController
         )
     )]
     #[Route('/api/status', name: 'api_status', methods: ['GET', 'HEAD'])]
-    public function __invoke()
+    public function __invoke(): Response
     {
         return $this->json(new Status());
     }

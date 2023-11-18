@@ -11,5 +11,6 @@ class Status
     public function __construct(
         #[OA\Property(type: 'string', example: 'ok')]
         public readonly string $status = 'ok',
-    ) {}
+    ) {
+    }
 }
