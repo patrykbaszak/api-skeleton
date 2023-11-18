@@ -15,5 +15,7 @@ rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.l
 mv skeleton/{,.[^.]}* ./
 rm -rf skeleton
 
+rm -rf CHANGELOG.md
+
 bash start.sh
 docker exec php composer update || composer update
