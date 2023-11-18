@@ -1,0 +1,16 @@
+parameters:
+    env(COMPOSER_JSON_PATH): '%kernel.project_dir%/composer.json'
+    APP_TITLE: '%env(key:title:json:file:COMPOSER_JSON_PATH)%'
+    APP_DESCRIPTION: '%env(key:description:json:file:COMPOSER_JSON_PATH)%'
+    env(PACKAGE_JSON_PATH): '%kernel.project_dir%/package.json'
+    APP_VERSION: '%env(key:version:json:file:PACKAGE_JSON_PATH)%'
+
+nelmio_api_doc:
+    documentation:
+        info:
+            title: '%APP_TITLE%'
+            description: '%APP_DESCRIPTION%'
+            version: '%APP_VERSION%'
+    areas: # to filter documented areas
+        path_patterns:
+            - ^/api(?!/doc(.json|.yaml)?$)
