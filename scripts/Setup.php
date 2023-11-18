@@ -19,7 +19,7 @@ $routes['controllers']['resource']['path'] = '../src/Presentation/Controller/API
 $routes['controllers']['resource']['namespace'] = 'App\Presentation\Controller\API';
 
 // setup nelmio
-$routes['extended_api_doc']['resource'] = '@DocumentationBundle/Resources/routes/*';
+$routes['extended_api_doc']['resource'] = '@ExtendedApiDocBundle/Resources/routes/*';
 $composer->repositories = [
     (object) [
         'type' => 'vcs',
