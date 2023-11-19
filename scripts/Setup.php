@@ -54,7 +54,7 @@ $replace = 'docker run -d --name php \
     -v $(pwd):/app \
     -w /app \
     -p 8080:8080 \
-    $IMAGE_NAME php -S 0.0.0.0:8080 -t public/index.php';
+    $IMAGE_NAME php -S 0.0.0.0:8080 public/index.php';
 $start = str_replace($search, $replace, $start);
 
 file_put_contents(__DIR__ . '/../skeleton/start.sh', $start);
