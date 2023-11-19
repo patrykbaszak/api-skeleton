@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.5](https://github.com/patrykbaszak/api-skeleton/compare/1.1.4...1.1.5) (2023-11-19)
+
+
+### Bug Fixes
+
+* Added ci process ([fb11798](https://github.com/patrykbaszak/api-skeleton/commit/fb11798d3f6f7b6aa4a8e8d5775e97dd23c56ee2))
+* Fixed start.sh ([18c4f7d](https://github.com/patrykbaszak/api-skeleton/commit/18c4f7de26f1f514bb93cc4027edaeecd9a84ea8))
+* removed or statement for `composer update` ([50ee3c7](https://github.com/patrykbaszak/api-skeleton/commit/50ee3c7c5af6a372894d0fe5acf16c905ee029f4))
+* Updated .gitignore ([d74042d](https://github.com/patrykbaszak/api-skeleton/commit/d74042da7539846f66890e0138528f8786d11e1b))
+
 ### [1.1.4](https://github.com/patrykbaszak/api-skeleton/compare/1.1.3...1.1.4) (2023-11-18)
 
 
