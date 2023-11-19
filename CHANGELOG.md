@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/patrykbaszak/api-skeleton/compare/1.1.6...1.2.0) (2023-11-19)
+
+
+### Bug Fixes
+
+* changed run command for php built-in server ([c8a9f38](https://github.com/patrykbaszak/api-skeleton/commit/c8a9f3803fe8ca141316719cd7f3266b3b608dd4))
+* Updated readme ([d9f7f50](https://github.com/patrykbaszak/api-skeleton/commit/d9f7f5096b843395deecdc72bbd465b11e7c2fa9))
+
 ### [1.1.6](https://github.com/patrykbaszak/api-skeleton/compare/1.1.5...1.1.6) (2023-11-19)
 
 
