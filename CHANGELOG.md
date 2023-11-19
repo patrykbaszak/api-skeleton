@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.6](https://github.com/patrykbaszak/api-skeleton/compare/1.1.5...1.1.6) (2023-11-19)
+
+
+### Bug Fixes
+
+* Removed -t flag from container start command ([78dd160](https://github.com/patrykbaszak/api-skeleton/commit/78dd160b90f3a4938bae35b0e38c5dc04ba62124))
+
 ### [1.1.5](https://github.com/patrykbaszak/api-skeleton/compare/1.1.4...1.1.5) (2023-11-19)
 
 
