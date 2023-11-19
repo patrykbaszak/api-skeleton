@@ -1,4 +1,4 @@
-# CLI Skeleton #
+# API Skeleton #
 
 A minimal project that allows you to quickly create a new project based on Symfony using useful tools: standard-version, php-cs-fixer, phpstan, phpunit.
 
