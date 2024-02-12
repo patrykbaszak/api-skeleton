@@ -67,4 +67,6 @@ rm -rf skeleton
 rm -rf CHANGELOG.md
 
 bash start.sh
+
+docker ps -a
 docker exec php composer update
