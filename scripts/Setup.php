@@ -16,8 +16,7 @@ $composer->title ??= 'API';
 $composer->description ??= 'Awesome API';
 
 // setup controller
-$routes['controllers']['resource']['path'] = '../src/Presentation/Controller/API/';
-$routes['controllers']['resource']['namespace'] = 'App\Presentation\Controller\API';
+$routes['controllers']['resource'] = '../src/';
 
 // setup nelmio
 $routes['extended_api_doc']['resource'] = '@ExtendedApiDocBundle/Resources/routes/*';
@@ -27,7 +26,7 @@ $composer->repositories = [
         'url' => 'https://github.com/DjordyKoert/NelmioApiDocBundle.git'
     ]
 ];
-$composer->require->{'nelmio/api-doc-bundle'} = 'dev-symfony-map-request-data';
+$composer->require->{'nelmio/api-doc-bundle'} = 'dev-master';
 $composer->require->{'pbaszak/extended-api-doc-bundle'} = '^1.1';
 $composer->extra->symfony->{'allow-contrib'} = true;
 $bundles[Nelmio\ApiDocBundle\NelmioApiDocBundle::class] = ['all' => true];
@@ -40,6 +39,9 @@ $composer->require->{'twig/extra-bundle'} = '^3.0';
 $composer->require->{'twig/twig'} = '^3.0';
 $bundles[Symfony\Bundle\TwigBundle\TwigBundle::class] = ['all' => true];
 $bundles[Twig\Extra\TwigExtraBundle\TwigExtraBundle::class] = ['all' => true];
+
+// setup browser-kit
+$composer->{'require-dev'}->{'symfony/browser-kit'} = '^6.3';
 
 // setup start script
 $search = 'docker run -d --name php \

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Presentation\View\Model\Status;
+namespace App\Status\Presentation\View\Model;
 
 use OpenApi\Attributes as OA;
 

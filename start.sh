@@ -48,6 +48,7 @@ docker exec php composer create-project pbaszak/skeleton --no-interaction
 
 rm -rf skeleton/src
 cp -r src/src skeleton/src
+cp -r src/tests skeleton/tests
 
 docker exec php php scripts/Setup.php
 docker stop php >/dev/null 2>&1
@@ -58,7 +59,7 @@ docker rmi -f $IMAGE_NAME >/dev/null 2>&1
 cp src/config/routes/nelmio_api_doc.yaml skeleton/config/routes/nelmio_api_doc.yaml
 cp src/config/packages/nelmio_api_doc.yaml skeleton/config/packages/nelmio_api_doc.yaml
 
-rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE .git vendor start.sh package.json package-lock.json Dockerfile
+rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE vendor start.sh package.json package-lock.json Dockerfile
 rm -rf skeleton/.github
 mv skeleton/{,.[^.]}* ./
 rm -rf skeleton
@@ -66,4 +67,12 @@ rm -rf skeleton
 rm -rf CHANGELOG.md
 
 bash start.sh
+
+rm -rf .git
+
+# setup github auth if GITHUB_TOKEN env exists
+if [ -n "$GITHUB_TOKEN" ]; then
+    docker exec php composer config -g github-oauth.github.com $GITHUB_TOKEN
+fi
+
 docker exec php composer update
