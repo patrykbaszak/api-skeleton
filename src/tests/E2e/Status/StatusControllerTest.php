@@ -18,8 +18,8 @@ class StatusControllerTest extends WebTestCase
     {
         $this->client = self::createClient();
 
-        $this->appVersion = self::getContainer()->getParameter('APP_VERSION');
-        $this->appCommitSha = self::getContainer()->getParameter('APP_COMMIT_SHA');
+        $this->appVersion = self::getContainer()->getEnv('APP_VERSION');
+        $this->appCommitSha = self::getContainer()->getEnv('APP_COMMIT_SHA');
     }
 
     /** @test */
