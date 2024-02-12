@@ -70,4 +70,8 @@ bash start.sh
 
 rm -rf .git
 
+git config --global url."https://".insteadOf "git://"
+
 docker exec php composer update
+
+git config --global url."git://".insteadOf "https://"
