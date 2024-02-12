@@ -59,7 +59,7 @@ docker rmi -f $IMAGE_NAME >/dev/null 2>&1
 cp src/config/routes/nelmio_api_doc.yaml skeleton/config/routes/nelmio_api_doc.yaml
 cp src/config/packages/nelmio_api_doc.yaml skeleton/config/packages/nelmio_api_doc.yaml
 
-rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE .git vendor start.sh package.json package-lock.json Dockerfile
+rm -rf node_modules scripts src .gitignore CHANGELOG.md composer.json composer.lock README.md LICENSE vendor start.sh package.json package-lock.json Dockerfile
 rm -rf skeleton/.github
 mv skeleton/{,.[^.]}* ./
 rm -rf skeleton
@@ -68,5 +68,6 @@ rm -rf CHANGELOG.md
 
 bash start.sh
 
-docker ps -a
+rm -rf .git
+
 docker exec php composer update
