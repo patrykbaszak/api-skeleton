@@ -70,8 +70,9 @@ bash start.sh
 
 rm -rf .git
 
-git config --global url."https://".insteadOf "git://"
+# setup github auth if GITHUB_TOKEN env exists
+if [ -n "$GITHUB_TOKEN" ]; then
+    docker exec php composer config -g github-oauth.github.com $GITHUB_TOKEN
+fi
 
 docker exec php composer update
-
-git config --global url."git://".insteadOf "https://"
