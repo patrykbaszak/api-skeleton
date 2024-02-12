@@ -12,6 +12,8 @@ jobs:
 
     - name: Running start.sh Script
       run: bash start.sh
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Application Build check
       run: docker exec php composer cache:clear
