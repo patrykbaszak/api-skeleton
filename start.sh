@@ -72,7 +72,6 @@ rm -rf .git
 
 # setup github auth if GITHUB_TOKEN env exists
 if [ -n "$GITHUB_TOKEN" ]; then
-    docker exec php mkdir -p /.composer && docker exec php chmod -R 777 /.composer
     docker exec php composer config -g github-oauth.github.com $GITHUB_TOKEN
 fi
 
