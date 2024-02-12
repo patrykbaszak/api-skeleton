@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/patrykbaszak/api-skeleton/compare/1.2.1...1.3.0) (2024-02-12)
+
+
+### Features
+
+* Updated skeleton ([#1](https://github.com/patrykbaszak/api-skeleton/issues/1)) ([e51b097](https://github.com/patrykbaszak/api-skeleton/commit/e51b097c96b8b57aa08c87bc30b89c7335715566))
+
+
+### Bug Fixes
+
+* Corrected README.md ([f14d8e7](https://github.com/patrykbaszak/api-skeleton/commit/f14d8e77c9b07f0c71261c243b979c0878caab62))
+
 ### [1.2.1](https://github.com/patrykbaszak/api-skeleton/compare/1.2.0...1.2.1) (2023-11-19)
 
 
