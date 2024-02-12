@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Presentation\Controller\API;
+namespace App\Status\Presentation\Controller\API;
 
-use App\Presentation\View\Model\Status\Status;
+use App\Status\Presentation\View\Model\Status;
 use Nelmio\ApiDocBundle\Annotation\Model;
 use OpenApi\Attributes as OA;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

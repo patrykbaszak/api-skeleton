@@ -48,6 +48,7 @@ docker exec php composer create-project pbaszak/skeleton --no-interaction
 
 rm -rf skeleton/src
 cp -r src/src skeleton/src
+cp -r src/tests skeleton/tests
 
 docker exec php php scripts/Setup.php
 docker stop php >/dev/null 2>&1
