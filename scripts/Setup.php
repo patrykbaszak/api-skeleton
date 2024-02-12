@@ -27,7 +27,7 @@ $composer->repositories = [
         'url' => 'https://github.com/DjordyKoert/NelmioApiDocBundle.git'
     ]
 ];
-$composer->require->{'nelmio/api-doc-bundle'} = 'dev-masters';
+$composer->require->{'nelmio/api-doc-bundle'} = 'dev-master';
 $composer->require->{'pbaszak/extended-api-doc-bundle'} = '^1.1';
 $composer->extra->symfony->{'allow-contrib'} = true;
 $bundles[Nelmio\ApiDocBundle\NelmioApiDocBundle::class] = ['all' => true];
