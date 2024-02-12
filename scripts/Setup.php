@@ -40,6 +40,9 @@ $composer->require->{'twig/twig'} = '^3.0';
 $bundles[Symfony\Bundle\TwigBundle\TwigBundle::class] = ['all' => true];
 $bundles[Twig\Extra\TwigExtraBundle\TwigExtraBundle::class] = ['all' => true];
 
+// setup browser-kit
+$composer->{'require-dev'}->{'symfony/browser-kit'} = '^6.3';
+
 // setup start script
 $search = 'docker run -d --name php \
     --user "$(id -u):$(id -g)" \
