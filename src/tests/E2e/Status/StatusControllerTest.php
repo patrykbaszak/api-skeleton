@@ -11,10 +11,15 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 class StatusControllerTest extends WebTestCase
 {
     private KernelBrowser $client;
+    private string $appVersion;
+    private string $appCommitSha;
 
     protected function setUp(): void
     {
         $this->client = self::createClient();
+
+        $this->appVersion = self::getContainer()->getParameter('APP_VERSION');
+        $this->appCommitSha = self::getContainer()->getParameter('APP_COMMIT_SHA');
     }
 
     /** @test */
@@ -26,8 +31,8 @@ class StatusControllerTest extends WebTestCase
 
         self::assertEquals(200, $response->getStatusCode());
         self::assertEquals('application/json', $response->headers->get('Content-Type'));
-        self::assertEquals(getenv('APP_VERSION'), $response->headers->get('X-Version'));
-        self::assertEquals(getenv('APP_COMMIT_SHA'), $response->headers->get('X-Version-Sha'));
+        self::assertEquals($this->appVersion, $response->headers->get('X-Version'));
+        self::assertEquals($this->appCommitSha, $response->headers->get('X-Version-Sha'));
         self::assertEquals('{"status":"ok"}', $response->getContent());
     }
 }
