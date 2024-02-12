@@ -17,7 +17,8 @@ final class ResponseDecoratorSubscriber implements EventSubscriberInterface
 
         #[Autowire(env: 'APP_COMMIT_SHA')]
         private string $appCommitSha,
-    ) {}
+    ) {
+    }
 
     public static function getSubscribedEvents(): array
     {
