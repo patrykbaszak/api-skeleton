@@ -18,8 +18,8 @@ class StatusControllerTest extends WebTestCase
     {
         $this->client = self::createClient();
 
-        $this->appVersion = json_decode(file_get_contents(self::getContainer()->getParameter('kernel.project_dir').'/package.json'), true)['version'];
-        $this->appCommitSha = file_get_contents(self::getContainer()->getParameter('kernel.project_dir').'/.git/refs/heads/main');
+        $this->appVersion = self::getContainer()->getParameter('app_version');
+        $this->appCommitSha = self::getContainer()->getParameter('app_commit_sha');
 
         parent::setUp();
     }

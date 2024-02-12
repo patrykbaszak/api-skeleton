@@ -3,13 +3,15 @@ parameters:
     # app_title: '%env(APP_TITLE)%'
     app_description: '%env(APP_DESCRIPTION)%'
     app_version: '%env(APP_VERSION)%'
+    app_commit_sha: '%env(APP_COMMIT_SHA)%'
+    app_commit_sha_short: '%env(APP_COMMIT_SHA_SHORT)%'
 
 nelmio_api_doc:
     documentation:
         info:
             title: '%app_title%'
             description: '%app_description%'
-            version: '%app_version%'
+            version: '%app_version% (%app_commit_sha_short%)'
     areas: # to filter documented areas
         path_patterns:
             - ^/api(?!/doc(.json|.yaml)?$)
