@@ -16,8 +16,7 @@ $composer->title ??= 'API';
 $composer->description ??= 'Awesome API';
 
 // setup controller
-$routes['controllers']['resource']['path'] = '../src/Presentation/Controller/API/';
-$routes['controllers']['resource']['namespace'] = 'App\Presentation\Controller\API';
+$routes['controllers']['resource'] = '../src/';
 
 // setup nelmio
 $routes['extended_api_doc']['resource'] = '@ExtendedApiDocBundle/Resources/routes/*';
