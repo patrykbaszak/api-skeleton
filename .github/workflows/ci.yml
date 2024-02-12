@@ -18,8 +18,14 @@ jobs:
     - name: Application Build check
       run: docker exec php composer cache:clear
 
-    - name: Application Tests check
-      run: docker exec php composer test:ci
+    - name: Running PHPStan
+      run: docker exec php composer code:analyse
+
+    - name: Running PHP-CS-Fixer
+      run: docker exec php composer code:fix -- --dry-run --diff -vvv
+
+    - name: Running PHPUnit
+      run: docker exec php composer test:cc
 
     - name: Application status check
       run: curl -s -I -f http://localhost:8080/api/status

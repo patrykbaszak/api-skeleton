@@ -20,7 +20,7 @@ class StatusControllerTest extends WebTestCase
     /** @test */
     public function shouldReturnValidResponse(): void
     {
-        $this->client->request('GET', '/status');
+        $this->client->request('GET', '/api/status');
 
         $response = $this->client->getResponse();
 
