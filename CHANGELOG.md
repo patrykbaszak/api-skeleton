@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.4.1](https://github.com/patrykbaszak/api-skeleton/compare/1.4.0...1.4.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* pbaszak/extended-api-doc-bundle updated ([983d5c9](https://github.com/patrykbaszak/api-skeleton/commit/983d5c90350cfe05122240e4d46d6a606c0e035f))
+
 ## [1.4.0](https://github.com/patrykbaszak/api-skeleton/compare/1.3.0...1.4.0) (2024-02-14)
 
 
