@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/patrykbaszak/api-skeleton/compare/1.3.0...1.4.0) (2024-02-14)
+
+
+### Features
+
+* Removed HEAD endpoint declaration and added develop.sh script ([348faa7](https://github.com/patrykbaszak/api-skeleton/commit/348faa78f9b8281e890ec3629c4a50033a743ef9))
+
 ## [1.3.0](https://github.com/patrykbaszak/api-skeleton/compare/1.2.1...1.3.0) (2024-02-12)
 
 
