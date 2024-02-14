@@ -20,13 +20,7 @@ $routes['controllers']['resource'] = '../src/';
 
 // setup nelmio
 $routes['extended_api_doc']['resource'] = '@ExtendedApiDocBundle/Resources/routes/*';
-$composer->repositories = [
-    (object) [
-        'type' => 'vcs',
-        'url' => 'https://github.com/DjordyKoert/NelmioApiDocBundle.git'
-    ]
-];
-$composer->require->{'nelmio/api-doc-bundle'} = 'dev-master';
+$composer->require->{'nelmio/api-doc-bundle'} = '*';
 $composer->require->{'pbaszak/extended-api-doc-bundle'} = '^1.1';
 $composer->extra->symfony->{'allow-contrib'} = true;
 $bundles[Nelmio\ApiDocBundle\NelmioApiDocBundle::class] = ['all' => true];

@@ -26,7 +26,7 @@ class StatusController extends AbstractController
             )
         )
     )]
-    #[Route('/api/status', name: 'api_status', methods: ['GET', 'HEAD'])]
+    #[Route('/api/status', name: 'api_status', methods: ['GET'])]
     public function __invoke(): Response
     {
         return $this->json(new Status());
