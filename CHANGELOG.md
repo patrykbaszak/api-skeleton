@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/patrykbaszak/api-skeleton/compare/1.4.1...1.5.0) (2025-09-22)
+
+
+### Features
+
+* added DDD basics ([fa5561f](https://github.com/patrykbaszak/api-skeleton/commit/fa5561f0d6ba05722e54a2da802173e68fe633f1))
+
+
+### Bug Fixes
+
+* Added error handler registration to bootstrap.php ([95f14ea](https://github.com/patrykbaszak/api-skeleton/commit/95f14ea26d976fa617cec737ecf7bb4962201cc5))
+
 ### [1.4.1](https://github.com/patrykbaszak/api-skeleton/compare/1.4.0...1.4.1) (2024-02-14)
 
 
